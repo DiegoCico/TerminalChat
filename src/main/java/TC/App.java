@@ -1,10 +1,11 @@
 package TC;
 
-public final class App {
-    private App() {
-    }
-
+public class App {
+    static Design d = new Design();
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        int userOption;
+
+        d.logo();
+        d.startOptions();
     }
 }
