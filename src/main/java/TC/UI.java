@@ -2,10 +2,10 @@ package TC;
 
 import java.util.Scanner;
 
-public class Design {
+public class UI {
     static Scanner in = new Scanner(System.in);
 
-    public Design() {
+    public UI() {
     }
 
     public static void logo() {
@@ -27,11 +27,12 @@ public class Design {
     public static int startOptions() {
         System.out.println("1. Join a chat");
         System.out.println("2. Create a chat");
-        System.out.println("3. Exit");
+        System.out.println("3. Universal chat");
+        System.out.println("4. Exit");
 
         int option = in.nextInt();
 
-        if (option < 1 || option > 3) {
+        if (option < 1 || option > 4) {
             System.out.println("Invalid option. Please try again.");
             return startOptions();
         } else
@@ -46,6 +47,12 @@ public class Design {
     public static int id() {
         System.out.println("Please enter a ID");
         return in.nextInt();
+    }
+
+    public static void rejected(){
+        System.out.println("Sorry ID entered not valid");
+        logo();
+        startOptions();
     }
 
 

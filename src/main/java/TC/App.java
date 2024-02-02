@@ -1,11 +1,10 @@
 package TC;
 
 public class App {
-    static Design d = new Design();
+    static UI d = new UI();
     public static void main(String[] args) {
-        int userOption;
-
         d.logo();
-        d.startOptions();
+        int userOption = d.startOptions();
+
     }
 }
